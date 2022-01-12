@@ -6,6 +6,7 @@ import Entypo from "react-native-vector-icons/Entypo";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import { COLOR } from "../../theme";
 import axios from "axios";
+import moment from "moment";
 
 const PointsEarned = () => {
   const [pointsEarned, setPointsEarned] = useState([]);
@@ -52,7 +53,8 @@ const PointsEarned = () => {
                   <View style={styles.whiteBox}></View>
                   <View style={styles.infoView}>
                     <Text bold fs={11}>
-                      {item.date}
+                      {/* {moment(item.date, "MM-DD-YYYY")} */}
+                      {moment(item.date).format("MMMM Do YYYY")}
                     </Text>
                     <Text bold fs={11}>
                       {item.title}

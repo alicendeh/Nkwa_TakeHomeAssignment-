@@ -6,6 +6,8 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import Entypo from "react-native-vector-icons/Entypo";
 import { COLOR } from "../../theme";
 import axios from "axios";
+import { format } from "timeago.js";
+import moment from "moment";
 
 const MainPoint = () => {
   const [storeTotal, setStoreTotal] = useState("");
@@ -22,6 +24,7 @@ const MainPoint = () => {
     );
     setStoreTotal(res.data.totalPoints);
     setIsLoading(false);
+    // console.log(moment().format("02 12 2024"));
   };
 
   return (
