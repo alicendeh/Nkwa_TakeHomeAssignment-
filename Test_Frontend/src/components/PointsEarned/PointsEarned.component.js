@@ -17,7 +17,7 @@ const PointsEarned = () => {
 
   const getPointsEarned = async () => {
     setIsLoading(true);
-    let res = await axios.get(`https://nkwatestapi.herokuapp.com/list/${3}`);
+    let res = await axios.get(`https://nkwatestapi.herokuapp.com/list/${1}`);
     setPointsEarned(res.data.totalPoints);
     setIsLoading(false);
   };

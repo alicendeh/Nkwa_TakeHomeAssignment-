@@ -18,7 +18,7 @@ const MainPoint = () => {
   const getTotalPoints = async () => {
     setIsLoading(true);
     let res = await axios.get(
-      `https://nkwatestapi.herokuapp.com/totalpoints/${3}`
+      `https://nkwatestapi.herokuapp.com/totalpoints/${1}`
     );
     setStoreTotal(res.data.totalPoints);
     setIsLoading(false);
