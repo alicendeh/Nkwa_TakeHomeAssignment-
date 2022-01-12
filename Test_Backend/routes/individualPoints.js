@@ -1,4 +1,5 @@
 const express = require("express");
+const moment = require("moment");
 
 const router = express.Router();
 
@@ -11,22 +12,27 @@ let userData = [
       {
         title: "Finished goal",
         points: 220,
-        date: Date.now(),
+        date: "2022-12-14",
       },
       {
         title: "Saved today",
         points: 540,
-        date: Date.now(),
+        date: "2022-1-1",
       },
       {
         title: "Saved 15000",
         points: 990,
-        date: Date.now(),
+        date: "2022-01-13",
       },
       {
         title: "Goal attain",
         points: 4,
-        date: Date.now(),
+        date: "2020-04-03",
+      },
+      {
+        title: "Goal attain",
+        points: 2,
+        date: "2020-04-03",
       },
     ],
   },
@@ -37,22 +43,27 @@ let userData = [
       {
         title: "Finished goal",
         points: 0,
-        date: Date.now(),
+        date: "2020-04-03",
       },
       {
         title: "Saved today",
         points: 990,
-        date: Date.now(),
+        date: "2020-07-03",
       },
       {
         title: "Saved 15000",
         points: 0,
-        date: Date.now(),
+        date: "2020-09-03",
       },
       {
         title: "Goal attain",
         points: 2,
-        date: Date.now(),
+        date: "2020-01-03",
+      },
+      {
+        title: "Goal attain",
+        points: 2,
+        date: "2021-04-03",
       },
     ],
   },
@@ -63,7 +74,7 @@ let userData = [
       {
         title: "Finished goal",
         points: 20,
-        date: Date.now(),
+        date: "2022-05-03",
       },
     ],
   },
@@ -72,7 +83,7 @@ let userData = [
 //get user data
 router.get("/", (req, res) => {
   try {
-    res.status(200).json({ data: userData });
+    res.status(200).json({ users: userData });
   } catch (error) {
     res.status(500).json({ message: "Server Error" });
   }
@@ -90,11 +101,14 @@ router.get("/totalpoints/:id", (req, res) => {
   }
 });
 
-//get list pf points accumulated over time
+//get list of points accumulated over time
 router.get("/list/:id", (req, res) => {
   try {
     let selectedUser = userData.filter((user) => user.id == req.params.id);
-    console.log(userData.individualPoints);
+
+    selectedUser[0].individualPoints.sort((a, b) => {
+      return new Date(b.date).valueOf() - new Date(a.date).valueOf();
+    });
     res.status(200).json({ totalPoints: selectedUser[0].individualPoints });
   } catch (error) {
     res.status(500).json({ message: "Server Error" });
