@@ -12,9 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
-    "moment": "^2.29.1",
     "mongoose": "^6.1.6",
-    "nodemon": "^2.0.15",
-    "timeago.js": "^4.0.2"
+    "nodemon": "^2.0.15"
   }
 }
