@@ -27,12 +27,12 @@ let userData = [
       {
         title: "Goal attain",
         points: 4,
-        date: "2020-04-03",
+        date: "2020-04-07",
       },
       {
         title: "Goal attain",
         points: 2,
-        date: "2020-04-03",
+        date: "2020-04-04",
       },
     ],
   },
