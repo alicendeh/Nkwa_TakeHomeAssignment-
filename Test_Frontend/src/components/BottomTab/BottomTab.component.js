@@ -10,15 +10,15 @@ const BottomTab = () => {
   return (
     <View style={styles.container}>
       <View style={styles.mainContainer}>
-        <IconContainer borderColor={COLOR.primary} w={40} h={40}>
-          <Feather name="user" size={33} color={COLOR.primary} />
+        <IconContainer borderColor={COLOR.primary} w={35} h={35}>
+          <Feather name="user" size={30} color={COLOR.primary} />
         </IconContainer>
         <View style={styles.circlo}>
           <IconContainer borderColor={COLOR.primary} w={50} h={50}>
             <Feather name="plus" size={33} color={COLOR.primary} />
           </IconContainer>
         </View>
-        <AntDesign name="book" size={33} color={COLOR.primary} />
+        <AntDesign name="book" size={30} color={COLOR.primary} />
       </View>
     </View>
   );

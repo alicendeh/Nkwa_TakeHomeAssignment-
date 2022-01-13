@@ -11,8 +11,8 @@ const style = StyleSheet.create({
     width: WIDTH * 0.9,
     borderRadius: 22,
     alignItems: "center",
-    paddingBottom: 48,
-    paddingTop: 15,
+    paddingBottom: 40,
+    // paddingTop: 15,
   },
   icon: {
     marginRight: 12,

@@ -5,13 +5,15 @@ const style = StyleSheet.create({
   container: {
     backgroundColor: COLOR.white,
     justifyContent: "flex-end",
-    paddingBottom: 10,
+    paddingBottom: 5,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 2,
     },
     shadowOpacity: 5.25,
+    height: 80,
+
     shadowRadius: 3.84,
     elevation: 5,
     justifyContent: "space-around",
@@ -19,7 +21,7 @@ const style = StyleSheet.create({
   },
   mainContainer: {
     width: WIDTH * 0.9,
-    marginTop: 10,
+    marginTop: 35,
     flexDirection: "row",
     justifyContent: "space-between",
   },
