@@ -6,13 +6,13 @@ Link to API https://nkwatestapi.herokuapp.com/
 
 **Routes**
 1. Get all users 
-link : https://nkwatestapi.herokuapp.com/
+ https://nkwatestapi.herokuapp.com/
 
 2. Get total points for a particular user
-link : https://nkwatestapi.herokuapp.com/totalpoints/userID (userID can either be 1,2 or 3)
+ https://nkwatestapi.herokuapp.com/totalpoints/userID (userID can either be 1,2 or 3)
 
 3. Get a list of points for a particular user 
-link: https://nkwatestapi.herokuapp.com/list/userID (userID can either be 1,2 or 3)
+ https://nkwatestapi.herokuapp.com/list/userID (userID can either be 1,2 or 3)
 
 ***How to run the project***
 1. Clone the repo
