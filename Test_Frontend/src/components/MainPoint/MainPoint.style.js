@@ -12,6 +12,7 @@ const style = StyleSheet.create({
     borderRadius: 22,
     alignItems: "center",
     paddingBottom: 48,
+    paddingTop: 15,
   },
   icon: {
     marginRight: 12,
@@ -27,7 +28,7 @@ const style = StyleSheet.create({
     marginBottom: 12,
   },
   contentContainer: {
-    width: WIDTH * 0.8,
+    width: WIDTH * 0.7,
   },
   textContent: {
     alignItems: "center",
@@ -39,7 +40,7 @@ const style = StyleSheet.create({
     backgroundColor: COLOR.primary,
     borderRadius: 7,
     marginTop: 14,
-    paddingHorizontal: 47,
+    paddingHorizontal: 67,
     paddingVertical: 19,
   },
 });

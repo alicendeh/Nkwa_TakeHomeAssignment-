@@ -48,12 +48,11 @@ const PointsEarned = () => {
               renderItem={({ item }) => (
                 <View style={styles.parentItem}>
                   <View style={styles.iconView}>
-                    <AntDesign name="star" size={22} color={COLOR.white} />
+                    <Entypo name="star" size={22} color={COLOR.white} />
                   </View>
-                  <View style={styles.whiteBox}></View>
+                  {/* <View style={styles.whiteBox}></View> */}
                   <View style={styles.infoView}>
                     <Text bold fs={11}>
-                      {/* {moment(item.date, "MM-DD-YYYY")} */}
                       {moment(item.date).format("MMMM Do YYYY")}
                     </Text>
                     <Text bold fs={11}>
