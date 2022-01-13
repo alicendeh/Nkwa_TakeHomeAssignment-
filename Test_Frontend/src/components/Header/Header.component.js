@@ -2,7 +2,7 @@ import React from "react";
 import { View, TouchableOpacity } from "react-native";
 import styles from "./Header.style";
 import { StatusBar } from "expo-status-bar";
-import { Container, Text } from "../../components";
+import { Text } from "../../components";
 import Entypo from "react-native-vector-icons/Entypo";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { COLOR } from "../../theme";
@@ -10,7 +10,7 @@ import { COLOR } from "../../theme";
 const Header = () => {
   return (
     <View style={styles.headerContainer}>
-      <StatusBar style="light" backgroundColor="red" />
+      <StatusBar style="light" backgroundColor={COLOR.primary} />
       <View style={styles.mainContainer}>
         <View style={styles.container}>
           <Text color={COLOR.white} fs={18}>
